@@ -34,13 +34,12 @@ Figure 2.
 
 ### Results
 
+Figure 1: City Type Summary
 | Total Rides   | Total Drivers   | Total Fares   | Average Fare per Ride   | Average Fare per Driver   |
 |:--------------|:----------------|:--------------|:------------------------|:--------------------------|
 | 125           | 78              | $4,327.93     | $34.62                  | $55.49                    |
 | 625           | 490             | $19,356.33    | $30.97                  | $39.50                    |
 | 1,625         | 2,405           | $39,854.38    | $24.53                  | $16.57                    |
-
-Figure 1: City Type Summary ![Summary Dataframe](/analysis/CitySummary.png)
 
 Figure 2: Total Fares by City Type
 ![TotalRatesWeekly](/analysis/TotalRatesWeekly.png)
