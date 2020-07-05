@@ -7,8 +7,10 @@
 The purpose of this analysis is to determine how to better serve the
 underserved portion of the population in order to make fares more affordable.
 
-### Technical Analysis There were two items we created to analysize the
-dataand make a determination: a summary table by city type and a chart showing
+### Technical Analysis
+
+There were two items we created to analysize the
+data and make a determination: a summary table by city type and a chart showing
 the weekly total fare by city type. To create the summary table, we first
 merged the two existing city and rides dataframes. Next, we created Pandas
 DataSeries to find total rides, total drivers, total fares, fares per ride,
@@ -32,6 +34,12 @@ Figure 2.
 
 ### Results
 
+| Total Rides   | Total Drivers   | Total Fares   | Average Fare per Ride   | Average Fare per Driver   |
+|:--------------|:----------------|:--------------|:------------------------|:--------------------------|
+| 125           | 78              | $4,327.93     | $34.62                  | $55.49                    |
+| 625           | 490             | $19,356.33    | $30.97                  | $39.50                    |
+| 1,625         | 2,405           | $39,854.38    | $24.53                  | $16.57                    |
+
 Figure 1: City Type Summary ![Summary Dataframe](/analysis/CitySummary.png)
 
 Figure 2: Total Fares by City Type
@@ -47,6 +55,7 @@ type chart, week over week, Urban areas had more total fares than Suburban and
 Rural areas as well. There seems to be a correlation between number of rides
 and fare amount; as the number of rides increase, the fare average decreases.
 The same goes for number of drivers.
+
 
 ## Challenges Encountered and Overcome
 
@@ -70,8 +79,7 @@ though. We should also look to see what days the fares may be lower in these
 areas. We could use the resample function to get the daily fares then group
 them by their appropriate day of the week. We could also look at the time of
 day and compare the rates by resampling by hour and creating a line chart
-comparing the City Types.
-
+comparing the City Types. This would allow us to set special rates for specific days and times of day. This may help make rides more affordable and help bolster business in the Rural and Suburban areas.
 
 ### Recommendations for Future Analysis
 
